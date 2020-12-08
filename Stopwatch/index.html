@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stopwatch</title>
+</head>
+<style>
+    body{
+        color: blue;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+    }
+    div>h1{
+        display: inline-block;
+        width: 100px;
+        font-size: large;
+        
+    }
+    button{
+        width: 100px;
+        font-size: large;
+        color: #000000 ;
+    }
+</style>
+<body>
+ <h1>Stop Watch </h1>
+ <div>
+     <h1 id="min"></h1> min</h1>
+     <h1 id="sec"></h1>sec</h1>
+     <h1 id="msec"></h1> millisec</h1>    
+</div>
+<br>
+<div>
+    <button onclick="start(),disabled = true" > start </button>
+    <button onclick="stop()" > Pause </button>
+    <button onclick="reset()"> Reset </button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App </title>
+</head>
+<style>
+    body{
+       text-align: center;
+    }
+    img{
+        width: 2%;
+        margin-left: 1%;
+    }
+    #navbar{
+        background-color: goldenrod;
+        display: flex;
+        margin-bottom: 10%;
+    }
+    button{
+        background-color: hotpink;
+        color: #fff;
+        width: 12%;
+        height: 30px;
+        margin-left: 10px;
+    }
+    input{ 
+        background-color: linen;
+        width: 18%;
+        height: 30px;
+        color: maroon;
+        
+    }
+</style>
+<body>
+    
+    
+    <div id=navbar>
+        <h1>To Do</h1>
+    </div>
+    <div>
+        <input id = "value" placeholder="EnterTodo" >
+        <button onclick="add()">ADD</button>
+        <button onclick="del()">Delete All</button>
+    </div>
+    <div>
+        <ul id = "list">
+           
+        </ul>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
