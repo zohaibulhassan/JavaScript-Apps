@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App </title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyD1MBzkKrUHA7WOz6h4ZZ7ZYvtk2OitHco",
+    authDomain: "todo-app-cc63f.firebaseapp.com",
+    projectId: "todo-app-cc63f",
+    storageBucket: "todo-app-cc63f.appspot.com",
+    messagingSenderId: "846165511185",
+    appId: "1:846165511185:web:2f43f8cc9213042e46b5b0",
+    measurementId: "G-1VC8PMPJ8E"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  
+</script>   
+</head>
+<style>
+    body{
+       text-align: center;
+    }
+    img{
+        width: 2%;
+        margin-left: 1%;
+    }
+    #navbar{
+        background-color: goldenrod;
+        display: flex;
+        margin-bottom: 10%;
+    }
+    button{
+        background-color: hotpink;
+        color: #fff;
+        width: 12%;
+        height: 30px;
+        margin-left: 10px;
+    }
+    input{ 
+        background-color: linen;
+        width: 18%;
+        height: 30px;
+        color: maroon;
+        
+    }
+</style>
+<body>
+    
+    
+    <div id=navbar>
+        <h1>To Do</h1>
+    </div>
+    <div>
+        <input id = "value" placeholder="EnterTodo" >
+        <button onclick="add()">ADD</button>
+        <button onclick="del()">Delete All</button>
+    </div>
+    <div>
+        <ul id = "list">
+           
+        </ul>
+    </div>
+    
+    <script src="app.js"></script>
+    
+</body>
+</html>
