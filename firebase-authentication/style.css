@@ -1,0 +1,27 @@
+.div{
+    height: 300px;
+    margin: 22% 22%;
+    border: 1px solid gray;
+    text-align: center;
+    background-color: burlywood;
+}
+input{
+    height: 30px;
+    width: 50%;
+    margin:30px 20px 5px;
+}
+button{
+    margin-top: 20px;
+    background-color: blue;
+    color: white;
+    width: 20%;
+    height: 15%;
+}
+
+h1{
+    margin-top: 5%;
+    height: 100px;
+    text-align: center;
+    background-color: teal;
+    color: white;
+}
